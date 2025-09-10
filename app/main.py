@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
 def home_view(request: Request):
-    return templates.TemplateResponse(request, "home.html", {"abc": "123"})  # ✅ Fixed
+    return templates.TemplateResponse(request, "home.html", {"abc": "123"})  
 
 @app.post("/")
 def home_detail_view():
